@@ -33,7 +33,64 @@
 
     <main class="content">
 
+      <form class="select-hotel" method="get" action="https://echo.htmlacademy.ru">
 
+        <fielsed class="select-hotel__block">
+          <legend class="select-hotel__heading">Инфраструктура</legend>
+          <label class="select-hotel__item">
+            <input class="visually-hidden" type="checkbox" name="pool" checked>
+            <span class="select-hotel__option">Бассейн</span>
+          </label>
+          <label class="select-hotel__item">
+            <input class="visually-hidden" type="checkbox" name="parking">
+            <span class="select-hotel__option">Парковка</span>
+          </label>
+          <label class="select-hotel__item">
+            <input class="visually-hidden" type="checkbox" name="wi-fi">
+            <span class="select-hotel__option">Wi-Fi</span>
+          </label>
+        </fielsed>
+
+        <fielsed class="select-hotel__block">
+          <legend class="select-hotel__heading">Инфраструктура</legend>
+          <label class="select-hotel__item">
+            <input class="visually-hidden" type="checkbox" name="hotel" checked>
+            <span class="select-hotel__option">Гостиница</span>
+          </label>
+          <label class="select-hotel__item">
+            <input class="visually-hidden" type="checkbox" name="motel" checked>
+            <span class="select-hotel__option">Мотель</span>
+          </label>
+          <label class="select-hotel__item">
+            <input class="visually-hidden" type="checkbox" name="apartments" checked>
+            <span class="select-hotel__option">Апартаменты</span></span>
+          </label>
+        </fielsed>
+
+        <fieldset class="select-hotel__block">
+          <legend class="select-hotel__heading">Стоимость в сутки (Р):</legend>
+          <div class="select-hotel__wrapper">
+            <label class="select-hotel__item select-hotel__item--small">
+              От <input class="select-hotel__input" type="text" name="min-price" value="0">
+            </label>
+            <label class="select-hotel__item select-hotel__item--small">
+              До <input class="select-hotel__input" type="text" name="max-price" value="3000">
+            </label>
+          </div>
+          <div class="double-range select-hotel__range">
+            <div class="double-range__scale"></div>
+            <div class="double-range__scale double-range__scale--fill"></div>
+            <button class="double-range__toggle double-range__toggle--min" type="button">
+              <span class="visually-hidden">Минимальная стоимость</span>
+            </button>
+            <button class="double-range__toggle double-range__toggle--max" type="button">
+              <span class="visually-hidden">Максимальная стоимость</span>
+            </button>
+          </div>
+        </fieldset>
+
+        <button class="button button--transparent select-hotel__submit" type="submit">Показать</button>
+      </form>
 
     </main>
 
