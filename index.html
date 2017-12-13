@@ -90,6 +90,51 @@
         </ol>
       </section>
 
+      <section class="search-hotel">
+        <h2 class="search-hotel__heading">Поиск гостиницы в Седоне</h2>
+        <p class="search-hotel__text">
+          <b class="search-hotel__text--bold">Заинтересовались?</b>
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <form class="search-form search-hotel__form" method="get" action="https://echo.htmlacademy.ru">
+          <label class="search-form__field">
+            Дата заезда
+            <input class="search-form__input search-form__input--big" type="text" name="arrival" placeholder="24 апреля 2017">
+            <button class="search-form__calendar" type="button">
+              <span class="visually-hidden">Выбрать дату</span>
+            </button>
+          </label>
+          <label class="search-form__field">
+            Дата выезда
+            <input class="search-form__input search-form__input--big" type="text" name="departure" placeholder="4 июля 2017">
+            <button class="search-form__calendar" type="button">
+              <span class="visually-hidden">Выбрать дату</span>
+            </button>
+          </label>
+          <label class="search-form__field">
+            Взрослые
+            <input class="search-form__input search-form__input--small" type="text" name="adults" placeholder="2">
+            <button class="search-form__caunt search-form__caunt--minus" type="button">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+            <button class="search-form__caunt search-form__caunt--plus" type="button">
+              <span class="visually-hidden">Больше</span>
+            </button>
+          </label>
+          <label class="search-form__field">
+            Дети
+            <input class="search-form__input search-form__input--small" type="text" name="children" placeholder="0">
+            <button class="search-form__caunt search-form__caunt--minus" type="button">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+            <button class="search-form__caunt search-form__caunt--plus" type="button">
+              <span class="visually-hidden">Больше</span>
+            </button>
+          </label>
+          <button class="search-form__submit" type="submit">Найти</button>
+        </form>
+      </section>
+
     </main>
 
   </body>
