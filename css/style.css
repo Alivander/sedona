@@ -347,3 +347,43 @@ img {
   margin: 0;
   padding: 0 12.5%;
 }
+
+/*  #SEACH_HOTEL  --------------------*/
+
+.search-hotel {
+  padding: 50px 6% 0;
+  text-align: center;
+}
+
+.search-hotel__text {
+  margin: 0;
+  margin-bottom: 47px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.search-hotel__text--bold {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.search-hotel__button {
+  display: block;
+  width: 568px;
+  margin: 0 auto;
+  padding: 30px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #766357;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+}
