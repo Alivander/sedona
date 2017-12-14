@@ -351,8 +351,9 @@ img {
 /*  #SEACH_HOTEL  --------------------*/
 
 .search-hotel {
+  position: relative;
+  z-index: 100;
   padding: 50px 6% 0;
-  text-align: center;
 }
 
 .search-hotel__text {
@@ -361,6 +362,7 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
+  text-align: center;
 }
 
 .search-hotel__text--bold {
@@ -372,6 +374,8 @@ img {
 }
 
 .search-hotel__button {
+  position: relative;
+  z-index: 10;
   display: block;
   width: 568px;
   margin: 0 auto;
@@ -380,10 +384,235 @@ img {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #766357;
+  cursor: pointer;
   border: none;
   border-radius: none;
   box-shadow: none;
+}
+
+.search-hotel__button:focus,
+.search-hotel__button:hover {
+  background-color: #604e43;
+}
+
+.search-hotel__button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.search-hotel__form {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -284px;
+}
+
+/*  #SEACH_FORM  ---------------------*/
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 568px;
+  padding: 55px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #ffffff;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  transition-duration: 0.2s;
+}
+
+.search-form--close {
+  transform: scaleY(0);
+}
+
+.search-form__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.search-form__field--small {
+  width: 225px;
+}
+
+.search-form__field--padding {
+  padding-left: 47px;
+}
+
+.search-form__wrapper {
+  position: relative;
+  margin-left: auto;
+}
+
+.search-form__input {
+  width: 346px;
+  height: 38px;
+  margin-left: auto;
+  padding: 10px 13px;
+  font: inherit;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.search-form__input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form__input:focus {
+  padding: 8px 11px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.search-form__input--small {
+  width: 114px;
+  padding: 10px 38px;
+  text-align: center;
+}
+
+.search-form__input--small:focus {
+  padding: 8px 36px;
+}
+
+.search-form__button {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-form__button--calendar {
+  top: 0;
+  right: 0;
+  background-image:
+    url("../img/calendar.svg"),
+    url("../img/calendar-hover.svg"),
+    url("../img/calendar-active.svg");
+  background-size:
+      21px 22px,
+      0 0,
+      0 0;
+}
+
+.search-form__button--calendar:focus,
+.search-form__button--calendar:hover {
+  background-size:
+    0 0,
+    21px 22px,
+    0 0;
+}
+
+.search-form__button--calendar:active {
+  background-size:
+    0 0,
+    0 0,
+    21px 22px;
+}
+
+.search-form__button--minus {
+  top: 0;
+  left: 0;
+}
+
+.search-form__button--minus::before {
+  content: "";
+  position: absolute;
+  top: 17.5px;
+  left: 13px;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.search-form__button--minus:focus::before,
+.search-form__button--minus:hover::before {
+  background-color: #000000;
+}
+
+.search-form__button--minus:active::before {
+  background-color: #81b3d2;
+}
+
+.search-form__button--plus {
+  top: 0;
+  right: 0;
+}
+
+.search-form__button--plus::before,
+.search-form__button--plus::after {
+  content: "";
+  position: absolute;
+  background-color: #a9a9a9;
+}
+
+.search-form__button--plus::before {
+  top: 17.5px;
+  left: 13.5px;
+  width: 11px;
+  height: 3px;
+}
+
+.search-form__button--plus::after {
+  top: 13.5px;
+  left: 17.5px;
+  width: 3px;
+  height: 11px;
+}
+
+.search-form__button--plus:focus::before,
+.search-form__button--plus:hover::before,
+.search-form__button--plus:focus::after,
+.search-form__button--plus:hover::after {
+  background-color: #000000;
+}
+
+.search-form__button--plus:active::before,
+.search-form__button--plus:active::after {
+  background-color: #81b3d2;
+}
+
+.search-form__submit {
+  width: 100%;
+  margin: 22px 0 0;
+  padding: 16px;
+  font: inherit;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-form__submit:focus,
+.search-form__submit:hover {
+  background-color: #669ec0;
+}
+
+.search-form__submit:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
