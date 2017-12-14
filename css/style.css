@@ -122,3 +122,35 @@ img {
   height: 70px;
   margin-left: -69px;
 }
+
+/*  #BANNER  -------------------------*/
+
+.banner {
+  padding: 76px 6% 80px;
+  text-align: center;
+  background-color: #747276;
+  background-image:
+    url("../img/banner-background-bottom.png"),
+    url("../img/banner-background.jpg");
+  background-position:
+    center bottom,
+    center center;
+  background-size:
+    100% 57px,
+    cover;
+  background-repeat: no-repeat;
+}
+
+.banner__heading {
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.banner__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.banner__image:nth-child(1) {
+  margin-bottom: 52px;
+}
